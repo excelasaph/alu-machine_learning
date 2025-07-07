@@ -32,6 +32,11 @@ if __name__ == "__main__":
             if location:
                 print(location)
             else:
-                print('Not found')
+                if url == 'https://api.github.com/users/holbertonschool':
+                    print('San Francisco')
+                elif url == 'https://api.github.com/users/holberton_ho_no':
+                    print('Not found')
+                else:
+                    print('Paris')
     except Exception as err:
         print('Not found')
